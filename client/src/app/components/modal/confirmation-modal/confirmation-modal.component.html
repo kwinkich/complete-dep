@@ -1,0 +1,8 @@
+<dialog #dialog class="confirm-modal">
+  <p class="M-b22 mb-5">{{ confirmText }}</p>
+  <p class="M-16 mb-20">{{ subConfirmText }}</p>
+  <div class="confirm-modal__buttons">
+    <button-custom (click)="close()" text="OK" colorClass="main-b" />
+    <button-custom (click)="close()" text="Close" colorClass="wrong-b" />
+  </div>
+</dialog>

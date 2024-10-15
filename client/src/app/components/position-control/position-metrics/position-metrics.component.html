@@ -1,0 +1,44 @@
+<div class="position-metrics mb-100">
+  <div class="position-metrics__block">
+    <p class="position-metrics__title M-16">Position size:</p>
+    <p class="position-metrics__value metrics-font-14">
+      {{ positionSize | number : "1.2-2" }} TON
+    </p>
+  </div>
+  <div class="position-metrics__block">
+    <p class="position-metrics__title M-16">Entry price:</p>
+    <p class="position-metrics__value metrics-font-14">
+      {{ entryPrice | number : "1.2-2" }} TON
+    </p>
+  </div>
+  <div class="position-metrics__block">
+    <p class="position-metrics__title M-16">Est. Liq. Price:</p>
+    <p class="position-metrics__value metrics-font-14">
+      {{ liquidationPrice | number : "1.2-2" }} TON
+    </p>
+  </div>
+  <div class="position-metrics__block">
+    <p class="position-metrics__title M-16">Price Impact:</p>
+    <p class="position-metrics__value metrics-font-14">
+      {{ priceImpact | number : "1.2-2" }}%
+    </p>
+  </div>
+  <div class="position-metrics__block">
+    <p class="position-metrics__title M-16">Approximate price TP:</p>
+    <p class="position-metrics__value metrics-font-14">
+      {{ approximatePriceTP | number : "1.2-2" }} TON
+    </p>
+  </div>
+  <div class="position-metrics__block">
+    <p class="position-metrics__title M-16">Approximate price SL:</p>
+    <p class="position-metrics__value metrics-font-14">
+      {{ approximatePriceSL | number : "1.2-2" }} TON
+    </p>
+  </div>
+  <div class="position-metrics__block">
+    <p class="position-metrics__title M-16">Fees:</p>
+    <p class="position-metrics__value metrics-font-14">
+      {{ fees | number : "1.2-2" }} TON
+    </p>
+  </div>
+</div>

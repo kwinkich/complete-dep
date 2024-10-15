@@ -1,0 +1,63 @@
+<div class="trade-pair-metrics">
+  <metric-block
+    [title]="'Market Price'"
+    [value]="'10.96 TON'"
+    [percentage]="'~60$'"
+  />
+  <metric-block
+    [title]="'Change 24h'"
+    [value]="'+10000%'"
+    colorClass="main-color"
+  />
+  <metric-block
+    [title]="'Volume 24h'"
+    [value]="'10,300 TON'"
+    [percentage]="'~54,000$'"
+  />
+  <metric-block
+    [isMinMaxSplit]="true"
+    [title]="'Max/Min'"
+    [valueMax]="'10TON'"
+    [valueMin]="'9TON'"
+  />
+  <metric-block
+    [title]="'Funding'"
+    [value]="'+0.003%'"
+    colorClass="main-color"
+  />
+  <metric-block [title]="'Next funding'" [value]="'1h3m'" />
+  <metric-block [title]="'Open Interest (L)'" [value]="'308k / 1M'" />
+  <metric-block [title]="'Open Interest (S)'" [value]="'308k / 1M'" />
+</div>
+
+<div class="trade-pair-metrics-mob">
+  <div class="trade-pair-metrics-mob-first">
+    <metric-block-mob
+      [title]="'Market Price'"
+      [value]="'10.96TON'"
+      [percentage]="'~60$'"
+    />
+    <metric-block-mob
+      [title]="'Change 24h'"
+      [value]="'+10000%'"
+      colorClass="main-color"
+    />
+    <metric-block-mob
+      [title]="'Volume 24h'"
+      [value]="'10,300 TON'"
+      [percentage]="'~54,000$'"
+    />
+    <metric-block-mob [title]="'Max'" [value]="'10TON'" />
+    <metric-block-mob [title]="'Min'" [value]="'9TON'" />
+  </div>
+  <div class="trade-pair-metrics-mob-second">
+    <metric-block-mob
+      [title]="'Funding'"
+      [value]="'+0.003%'"
+      colorClass="main-color"
+    />
+    <metric-block-mob [title]="'Next funding'" [value]="'1h3m'" />
+    <metric-block-mob [title]="'Open Interest (L)'" [value]="'308k / 1M'" />
+    <metric-block-mob [title]="'Open Interest (S)'" [value]="'308k / 1M'" />
+  </div>
+</div>

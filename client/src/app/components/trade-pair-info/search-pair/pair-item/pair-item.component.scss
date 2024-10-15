@@ -1,0 +1,54 @@
+.search-pair-item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+  &-icon-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &-img {
+      border-radius: 5px;
+      & img {
+        border-radius: 5px;
+      }
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      &-first {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        &-star {
+          width: 18px;
+          height: 18px;
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      &-second {
+      }
+    }
+  }
+  &-metrics {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &-metric {
+    width: 62px;
+    &-percent {
+      width: 115px;
+      text-align: center;
+    }
+  }
+
+  &:hover {
+    background-color: var(--secondary-color);
+  }
+}

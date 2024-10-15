@@ -1,0 +1,45 @@
+<div class="trade-pair-content">
+  <div class="trade-pair-select-list-block">
+    <div
+      #pairSelect
+      (click)="toggleSelectTradePair()"
+      class="trade-pair-select"
+    >
+      <div class="trade-pair-select__icon-info">
+        <div class="trade-pair-select__icon">
+          <img src="./assets/png/template-img.png" alt="NFT Icon" />
+        </div>
+        <div class="trade-pair-select__info">
+          <div class="trade-pair-select__info-first">
+            <button class="trade-pair-select__info-favorite">
+              <img src="./assets/svg/star.svg" alt="Star" />
+            </button>
+            <p class="trade-pair-select__info-pair M-14">CN/TON</p>
+          </div>
+          <div class="trade-pair-select__info-second">
+            <a href="#" class="trade-pair-select__info-link">
+              <img src="./assets/svg/telegram-white.svg" alt="telegram" />
+            </a>
+            <a href="#" class="trade-pair-select__info-link">
+              <img src="./assets/svg/x-icon-white.svg" alt="x" />
+            </a>
+            <a href="#" class="trade-pair-select__info-link">
+              <img src="./assets/svg/youtube-white.svg" alt="youtube" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="trade-pair-select__arrow">
+        <img src="./assets/svg/arrow-white.svg" alt="Arrow" />
+      </div>
+    </div>
+    <div #pairSelectMenu class="search-pair-list">
+      <search-pair
+        [pairSelect]="pairSelect"
+        [pairSelectMenu]="pairSelectMenu"
+      />
+    </div>
+  </div>
+  <div class="trade-pair-separation"></div>
+  <trade-pair-metrics />
+</div>
