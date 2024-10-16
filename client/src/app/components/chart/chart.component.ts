@@ -18,7 +18,7 @@ import { createChart, CrosshairMode } from 'lightweight-charts';
 export class ChartComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('chart') chartEl: ElementRef | null = null;
   private conn: WebSocket | undefined;
-  private intervalId: any;
+  private intervalId: any; // Интервал для запросов на обновление свечи
 
   constructor(private _candlesService: CandlesService) {}
 
@@ -48,23 +48,22 @@ export class ChartComponent implements OnInit, AfterViewInit, OnDestroy {
     },
     timeScale: {
       borderColor: '#485158',
+      timeVisible: true,
+      secondVisible: false,
     },
   };
 
   ngOnInit() {
     // Получение начальных данных
     this._candlesService
-      .getCandlesHistory('EQBcjALtmHwSBCSpDOZ1_emrSQVtJU6J0POZR-ThkZjfXkZs')
+      .getCandlesHistory('EQAOQdwdw8kGftJCSFgOErM1mBjYPe4DBPq8-AhF6vr9si5N')
       .subscribe({
         next: (res) => {
-          console.log('default res', res);
-
-          const resdata = JSON.parse(JSON.stringify(res));
-          console.log(resdata.data);
-
+          const resdata = JSON.parse(JSON.stringify(res)); // Парсим данные
           const caldeData = resdata.data.map((c: any) => {
+            // Создаём массив
             return {
-              time: Number(c.openTime),
+              time: c.openTime / 1000,
               open: Number(c.open),
               high: Number(c.high),
               low: Number(c.low),
@@ -72,16 +71,16 @@ export class ChartComponent implements OnInit, AfterViewInit, OnDestroy {
             };
           });
 
-          // Удаляем дубликаты по времени, чтобы временные метки были уникальными
-          const uniqueCaldeData = Array.from(
-            new Map(caldeData.map((item: any) => [item.time, item])).values()
-          );
-
-          // Сортируем данные по времени в порядке возрастания
-          uniqueCaldeData.sort((a: any, b: any) => a.time - b.time);
-
-          console.log('Свечи (уникальные и отсортированные):', uniqueCaldeData);
-          this.candlestickSeries.setData(uniqueCaldeData);
+          // // Удаляем дубликаты по времени, чтобы временные метки были уникальными
+          // const uniqueCaldeData: Candle[] = Array.from(
+          //   new Map<number, Candle>(
+          //     caldeData.map((item: Candle) => [item.time, item])
+          //   ).values()
+          // );
+          // // Сортируем данные по времени в порядке возрастания
+          // uniqueCaldeData.sort((a: any, b: any) => a.time - b.time);
+          // this.candles = uniqueCaldeData;
+          this.candlestickSeries.setData(caldeData);
         },
         error: (error) => {
           console.error('Ошибка при получении данных о свечах:', error);
@@ -90,7 +89,6 @@ export class ChartComponent implements OnInit, AfterViewInit, OnDestroy {
           console.log('Получение данных о свечах завершено.');
         },
       });
-
     this.intervalId = setInterval(() => {
       this.fetchCandles();
     }, 2000);
@@ -98,18 +96,18 @@ export class ChartComponent implements OnInit, AfterViewInit, OnDestroy {
 
   fetchCandles() {
     this._candlesService
-      .getCandles('EQBcjALtmHwSBCSpDOZ1_emrSQVtJU6J0POZR-ThkZjfXkZs', '1h')
+      .getCandles('EQAOQdwdw8kGftJCSFgOErM1mBjYPe4DBPq8-AhF6vr9si5N')
       .subscribe({
         next: (res: Candle) => {
           console.log(res);
           const editLiveData = {
-            time: Number(res.openTime),
+            time: Number(res.openTime) / 1000,
             open: Number(res.open),
             high: Number(res.high),
             low: Number(res.low),
             close: Number(res.close || res.open),
           };
-          console.log('Свеча обновленная', editLiveData);
+
           this.candlestickSeries.update(editLiveData);
         },
         error: (error) => {

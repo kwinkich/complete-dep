@@ -7,26 +7,23 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CandlesService {
-  // private baseUrl = 'http://92.205.129.142:70'; // Тут будет ссылка на серверную часть
-  private baseUrl = 'http://127.0.0.1:5000'; // Тут будет ссылка на серверную часть
+  private baseUrl = 'http://app.dywetrading.com'; // Тут будет ссылка на серверную часть
   constructor(private _http: HttpClient) {}
 
   // Функция для получения истории свечей
-
   public getCandlesHistory(
-    tradePair: string // Краткое название торговой пары (BITCOINUSDT -> BTCUSDT)
+    collectionAddr: string // Адресс коллекции
   ): Observable<Candle[]> {
     return this._http.get<Candle[]>(
-      `${this.baseUrl}/dyweapi/v1/getHistory/${tradePair}`
+      `${this.baseUrl}/dyweapi/v1/getHistory/${collectionAddr}`
     );
   }
 
   public getCandles(
-    tradePair: string, // Краткое название торговой пары (BITCOINUSDT -> BTCUSDT)
-    currentTimeFrame: string // Текущий тайм-фрейм (1m, 10m, 15m, etc.)
+    collectionAddr: string // Адресс коллекции
   ): Observable<Candle> {
     return this._http.get<Candle>(
-      `${this.baseUrl}/dyweapi/v1/getData/${tradePair}`
+      `${this.baseUrl}/dyweapi/v1/getData/${collectionAddr}`
     );
   }
 

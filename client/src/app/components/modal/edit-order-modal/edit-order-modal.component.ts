@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Position } from 'app/interfaces/position';
 import { ModalService } from 'app/services/show-modal/modal.service';
 import { UtilsService } from 'app/utils/utils.service';
@@ -13,7 +13,6 @@ export class EditOrderModalComponent {
   @Input() newPosition!: Position;
 
   constructor(private _utils: UtilsService, private _modal: ModalService) {}
-  editOrderModal: ElementRef<HTMLDialogElement> | null = null;
 
   public isTPSL: boolean = false;
   public activeMarginButton: number | null = null;
@@ -40,14 +39,10 @@ export class EditOrderModalComponent {
   public saveOrder() {
     console.log('Order saved', this.newPosition);
 
-    if (this.editOrderModal) {
-      this._modal.closeModal();
-    }
+    this._modal.closeModal();
   }
   public closeModal() {
-    if (this.editOrderModal) {
-      this._modal.closeModal();
-    }
+    this._modal.closeModal();
   }
 
   private calculateRelatedValues() {

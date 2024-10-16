@@ -21,8 +21,6 @@ export class ModalService {
       return;
     }
 
-    document.body.classList.add('no-scroll');
-
     // Создаем компонент
     this.modalRef = createComponent(component, {
       environmentInjector: this.appRef.injector,
@@ -52,8 +50,6 @@ export class ModalService {
 
   closeModal() {
     if (this.modalRef) {
-      document.body.classList.remove('no-scroll');
-
       const dialogElem = this.modalRef.location.nativeElement.querySelector(
         'dialog'
       ) as HTMLDialogElement;

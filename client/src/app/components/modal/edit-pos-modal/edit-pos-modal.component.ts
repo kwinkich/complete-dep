@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Position } from 'app/interfaces/position';
 import { ModalService } from 'app/services/show-modal/modal.service';
 import { UtilsService } from 'app/utils/utils.service';
@@ -12,7 +12,7 @@ import * as currency from 'currency.js';
 export class EditPosModalComponent {
   @Input() newPosition!: Position;
   constructor(private _utils: UtilsService, private _modal: ModalService) {}
-  public editPositionModal: ElementRef<HTMLDialogElement> | null = null;
+  // public editPositionModal: ElementRef<HTMLDialogElement> | null = null;
 
   public isTPSL: boolean = true;
 
@@ -29,9 +29,7 @@ export class EditPosModalComponent {
   };
 
   public closeModal() {
-    if (this.editPositionModal) {
-      this._modal.closeModal();
-    }
+    this._modal.closeModal();
   }
 
   // Функция отвечает за обновление процента тейк профита
@@ -118,8 +116,6 @@ export class EditPosModalComponent {
 
   public savePosition() {
     console.log('Position saved successfully', this.newPosition);
-    if (this.editPositionModal) {
-      this._modal.closeModal();
-    }
+    this._modal.closeModal();
   }
 }
