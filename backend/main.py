@@ -1,7 +1,9 @@
 import asyncio
 from threading import Thread
-import methods.parser as parser
+
 import methods.api as api
+import methods.parser as parser
+
 
 def start_parser(address):
     asyncio.run(parser.main(address))

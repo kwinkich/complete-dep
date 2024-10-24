@@ -1,3 +1,694 @@
 {
-	"data": []
+    "data": [
+        {
+            "openTime": 1729120080000,
+            "closeTime": 1729119600000,
+            "percentChangePrice": null,
+            "currentPrice": 188.99,
+            "open": 188.99,
+            "high": 188.99,
+            "low": 188.99,
+            "close": 188.99
+        },
+        {
+            "openTime": 1729120080000,
+            "closeTime": 1729120380000,
+            "percentChangePrice": -0.3852406870714651,
+            "currentPrice": 187.9,
+            "open": 188.99,
+            "high": 188.99,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729120380000,
+            "closeTime": 1729120680000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729120800000,
+            "closeTime": 1729119600000,
+            "percentChangePrice": null,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729120800000,
+            "closeTime": 1729121100000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729121220000,
+            "closeTime": 1729119600000,
+            "percentChangePrice": null,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729121280000,
+            "closeTime": 1729119600000,
+            "percentChangePrice": null,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729121280000,
+            "closeTime": 1729121580000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729121580000,
+            "closeTime": 1729121880000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729121880000,
+            "closeTime": 1729122180000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729122180000,
+            "closeTime": 1729122480000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729122480000,
+            "closeTime": 1729119600000,
+            "percentChangePrice": null,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729122480000,
+            "closeTime": 1729119600000,
+            "percentChangePrice": null,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729122540000,
+            "closeTime": 1729119600000,
+            "percentChangePrice": null,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729122540000,
+            "closeTime": 1729119600000,
+            "percentChangePrice": null,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729122540000,
+            "closeTime": 1729122840000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729122540000,
+            "closeTime": 1729122840000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729122840000,
+            "closeTime": 1729123140000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729122840000,
+            "closeTime": 1729123140000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 187.9,
+            "open": 187.9,
+            "high": 187.9,
+            "low": 187.9,
+            "close": 187.9
+        },
+        {
+            "openTime": 1729195680000,
+            "closeTime": 1729195200000,
+            "percentChangePrice": 0,
+            "currentPrice": 191.999999999,
+            "open": 191.999999999,
+            "high": 191.999999999,
+            "low": 191.999999999,
+            "close": 191.999999999
+        },
+        {
+            "openTime": 1729195800000,
+            "closeTime": 1729195200000,
+            "percentChangePrice": 0,
+            "currentPrice": 191.999999999,
+            "open": 191.999999999,
+            "high": 191.999999999,
+            "low": 191.999999999,
+            "close": 191.999999999
+        },
+        {
+            "openTime": 1729195800000,
+            "closeTime": 1729196100000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.999999999,
+            "open": 191.999999999,
+            "high": 191.999999999,
+            "low": 191.999999999,
+            "close": 191.999999999
+        },
+        {
+            "openTime": 1729196220000,
+            "closeTime": 1729195200000,
+            "percentChangePrice": 0,
+            "currentPrice": 191.999999999,
+            "open": 191.999999999,
+            "high": 191.999999999,
+            "low": 191.999999999,
+            "close": 191.999999999
+        },
+        {
+            "openTime": 1729196220000,
+            "closeTime": 1729196520000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.999999999,
+            "open": 191.999999999,
+            "high": 191.999999999,
+            "low": 191.999999999,
+            "close": 191.999999999
+        },
+        {
+            "openTime": 1729196700000,
+            "closeTime": 1729195200000,
+            "percentChangePrice": 0,
+            "currentPrice": 191.999999999,
+            "open": 191.999999999,
+            "high": 191.999999999,
+            "low": 191.999999999,
+            "close": 191.999999999
+        },
+        {
+            "openTime": 1729196700000,
+            "closeTime": 1729197000000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.999999999,
+            "open": 191.999999999,
+            "high": 191.999999999,
+            "low": 191.999999999,
+            "close": 191.999999999
+        },
+        {
+            "openTime": 1729197000000,
+            "closeTime": 1729197300000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.999999999,
+            "open": 191.999999999,
+            "high": 191.999999999,
+            "low": 191.999999999,
+            "close": 191.999999999
+        },
+        {
+            "openTime": 1729197300000,
+            "closeTime": 1729197600000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.999999999,
+            "open": 191.999999999,
+            "high": 191.999999999,
+            "low": 191.999999999,
+            "close": 191.999999999
+        },
+        {
+            "openTime": 1729197600000,
+            "closeTime": 1729197900000,
+            "percentChangePrice": -0.003472629391967509,
+            "currentPrice": 191.989999,
+            "open": 191.999999999,
+            "high": 191.999999999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729197900000,
+            "closeTime": 1729198200000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.989999,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729198200000,
+            "closeTime": 1729198500000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.989999,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729198500000,
+            "closeTime": 1729198800000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.989999,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729198800000,
+            "closeTime": 1729199100000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.989999,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729199100000,
+            "closeTime": 1729199400000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.989999,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729199400000,
+            "closeTime": 1729199700000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.989999,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729199700000,
+            "closeTime": 1729200000000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.989999,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729200000000,
+            "closeTime": 1729200300000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.989999,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729200300000,
+            "closeTime": 1729200600000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.989999,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729200600000,
+            "closeTime": 1729200900000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.989999,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729200900000,
+            "closeTime": 1729201200000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.989999,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729201200000,
+            "closeTime": 1729201500000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.989999,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729201500000,
+            "closeTime": 1729201800000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.989999,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.989999,
+            "close": 191.989999
+        },
+        {
+            "openTime": 1729201800000,
+            "closeTime": 1729202100000,
+            "percentChangePrice": -0.003472116131239326,
+            "currentPrice": 191.98,
+            "open": 191.989999,
+            "high": 191.989999,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729202100000,
+            "closeTime": 1729202400000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729202400000,
+            "closeTime": 1729202700000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729202700000,
+            "closeTime": 1729203000000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729203000000,
+            "closeTime": 1729203300000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729203300000,
+            "closeTime": 1729203600000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729203600000,
+            "closeTime": 1729203900000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729203900000,
+            "closeTime": 1729204200000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729204200000,
+            "closeTime": 1729204500000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729204500000,
+            "closeTime": 1729204800000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729204800000,
+            "closeTime": 1729205100000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729205100000,
+            "closeTime": 1729205400000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729205400000,
+            "closeTime": 1729205700000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729205700000,
+            "closeTime": 1729206000000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729206000000,
+            "closeTime": 1729206300000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729206300000,
+            "closeTime": 1729206600000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729206600000,
+            "closeTime": 1729206900000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729206900000,
+            "closeTime": 1729207200000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729207200000,
+            "closeTime": 1729207500000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729207500000,
+            "closeTime": 1729207800000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729207800000,
+            "closeTime": 1729208100000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729208100000,
+            "closeTime": 1729208400000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729208400000,
+            "closeTime": 1729208700000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.98,
+            "open": 191.98,
+            "high": 191.98,
+            "low": 191.98,
+            "close": 191.98
+        },
+        {
+            "openTime": 1729243020000,
+            "closeTime": 1729242000000,
+            "percentChangePrice": 0,
+            "currentPrice": 191.74,
+            "open": 191.74,
+            "high": 191.74,
+            "low": 191.74,
+            "close": 191.74
+        },
+        {
+            "openTime": 1729243020000,
+            "closeTime": 1729243320000,
+            "percentChangePrice": 0.0,
+            "currentPrice": 191.74,
+            "open": 191.74,
+            "high": 191.74,
+            "low": 191.74,
+            "close": 191.74
+        },
+        {
+            "openTime": 1729243620000,
+            "closeTime": 1729242000000,
+            "percentChangePrice": 0,
+            "currentPrice": 191.74,
+            "open": 191.74,
+            "high": 191.74,
+            "low": 191.74,
+            "close": 191.74
+        },
+        {
+            "openTime": 1729243800000,
+            "closeTime": 1729242000000,
+            "percentChangePrice": 0,
+            "currentPrice": 191.74,
+            "open": 191.74,
+            "high": 191.74,
+            "low": 191.74,
+            "close": 191.74
+        }
+    ]
 }

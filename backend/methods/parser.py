@@ -1,3 +1,4 @@
+#COPY
 import asyncio
 import json
 import os
@@ -7,15 +8,19 @@ import pytz
 from methods.get_floor import get_nft_collection_floor
 
 os.environ['TZ'] = 'Europe/Moscow'
+timezone = pytz.timezone('Europe/Moscow')
 
+now = datetime.now(timezone)
+close_time = (now + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
+open_time = now.replace(minute=0, second=0, microsecond=0)
+
+prices = []
 close_price = None
 isClose = False
-now = datetime.now()
-close_time_hour = (now + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
-open_time_hour = now.replace(minute=0,second=0, microsecond=0)
-close_time_minutes = (now + timedelta(minutes=5)).replace(second=0, microsecond=0)
-open_time_minutes = now.replace(second=0, microsecond=0)
-prices = [] 
+#now = datetime.now()
+#close_time = (now + timedelta(minutes=5)).replace(minute=0, second=0, microsecond=0)
+#open_time = now.replace(second=0, microsecond=0)
+prices = []  
 
 def set_timezone():
     # Устанавливаем временную зону с использованием pytz
@@ -23,46 +28,15 @@ def set_timezone():
     now = datetime.now(timezone)
     print(f'Current time in Europe/Moscow timezone: {now}')
 
-def get_time_minutes(address):
-    global open_time_minutes, close_time_minutes, prices
-    # Обновление текущего времени
-    now = datetime.now()
-    if len(prices) > 0 and close_time_minutes <= now.replace(second=0, microsecond=0):
-        filename = f'./candles/candleHistory{address}5m.json'
-        if os.path.exists(filename):
-            with open(filename, 'r+') as json_file:
-                json_data = json.load(json_file)
-        else:
-            json_data = {"data": []}
-
-        data = {
-            'openTime': int(open_time_minutes.timestamp() * 1000),
-            'closeTime': int(close_time_minutes.timestamp() * 1000),
-            'percentChangePrice': percentChange(),
-            'currentPrice': prices[-1],
-            'open': prices[0],
-            'high': max(prices),
-            'low': min(prices),
-            'close': prices[-1],
-        }
-        # Добавляем новые данные в список "data"
-        json_data["data"].append(data)
-        # Записываем обновленные данные в файл
-        with open(filename, 'w+') as json_file:
-            json.dump(json_data, json_file, indent=4)
-        print(f"File \033[96mcandlesHistory{address}5m\033[0m.json updated, request amount: {len(prices)}")
-        prices.clear()
-        close_time_minutes = (now + timedelta(minutes=5)).replace(second=0, microsecond=0)
-        open_time_minutes = now.replace(second=0, microsecond=0)
-
 
 def get_time_hour(address):
     global open_time_hour, close_time_hour, prices
-    # Обновление текущего времени
-    now = datetime.now()
-    if len(prices) > 0 and close_time_hour <= now.replace(minute=0,second=0, microsecond=0):
-        filename = f'./candles/candleHistory{address}1h.json'
-        if os.path.exists(filename):
+    # Обновление текущего времени с учетом временной зоны
+    now = datetime.now(timezone)
+
+    if len(prices) > 0 and close_time_hour <= now.replace(minute=0, second=0, microsecond=0):
+        filename = f'./candles/candleHistory{address}.json'
+        if os.path.exists(filename): 
             with open(filename, 'r+') as json_file:
                 json_data = json.load(json_file)
         else:
@@ -83,25 +57,36 @@ def get_time_hour(address):
         # Записываем обновленные данные в файл
         with open(filename, 'w+') as json_file:
             json.dump(json_data, json_file, indent=4)
-        print(f"File \033[96mcandlesHistory{address}\033[0m.json updated, request amount: {len(prices)}")
+        print(f"File \033[96mcandlesANON\033[0m.json updated, request amount: {len(prices)}")
         prices.clear()
-        close_time_hour = (now + timedelta(hours=1)).replace(minute=0,second=0, microsecond=0)
-        open_time_hour = now.replace(minute=0,second=0, microsecond=0)
 
-    print(f'\033[92m close time: {close_time_hour} \033[0m')
-    return open_time_hour, close_time_hour
+        # Обновление close_time и open_time с учетом временной зоны
+        close_time = (now + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
+        open_time = now.replace(minute=0, second=0, microsecond=0)
+
+    print(f'\033[92m close time hour: {close_time_hour} \033[0m')
+    return open_time, close_time
 
 
 async def getPrice(address):
     print(f'Fetching price for address: {address}')
     result = await get_nft_collection_floor(address)
-    prices.append(result)
-    print(f'\033[92m Price fetched: {result} \033[0m')
-    return result
+    if result is None:
+        if prices:
+            last_price = prices[-1]
+            print(f'\033[93m Price is None, returning last available price: {last_price} \033[0m')
+            return last_price
+        else:
+            print('\033[91m Price is None and no previous price available. \033[0m')
+            return None
+    else:
+        prices.append(result)
+        print(f'\033[92m Price fetched: {result} \033[0m')
+        return result
 
 def percentChange():
-    if len(prices) < 2 or prices[0] is None or prices[-1] is None:
-        return 0;
+    if len(prices) < 2:
+        return 0
     return ((prices[-1] - prices[0]) / (prices[0] + prices[-1] / 2)) * 100
 
 async def writeFloorInFile(data, address):

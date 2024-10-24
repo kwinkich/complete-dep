@@ -1,4 +1,4 @@
-from gql import gql, Client
+from gql import Client, gql
 from gql.transport.aiohttp import AIOHTTPTransport
 
 ANONYMOUS_TG_NUMBERS = 'EQAOQdwdw8kGftJCSFgOErM1mBjYPe4DBPq8-AhF6vr9si5N'
@@ -22,6 +22,3 @@ async def get_nft_collection_floor(nft_collection_address: str):
       return result["alphaNftCollectionStats"]["floorPrice"]
   except:
     return None
-
-
- 

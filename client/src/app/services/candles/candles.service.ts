@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CandlesService {
-  private baseUrl = 'http://app.dywetrading.com'; // Тут будет ссылка на серверную часть
+  private baseUrl = 'http://localhost:5000'; // Тут будет ссылка на серверную часть
   constructor(private _http: HttpClient) {}
 
   // Функция для получения истории свечей
